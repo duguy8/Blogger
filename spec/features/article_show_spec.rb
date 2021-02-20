@@ -23,6 +23,7 @@ describe "user sees one article" do
 
       click_link("Delete Article")
 
+      expect(page).to have_content("Article deleted")
       expect(current_path).to eq(articles_path)
       expect(page).to have_content(article_2.title)
       expect(page).not_to have_content(article_1.title)

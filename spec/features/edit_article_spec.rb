@@ -16,6 +16,7 @@ RSpec.describe "As a visitor" do
 
       expect(page).to have_content("New Title!")
       expect(page).to have_content("New Body!")
+      expect(page).to have_content("Article 'New Title!' was updated")
     end
   end
 end
